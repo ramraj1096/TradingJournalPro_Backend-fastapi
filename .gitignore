@@ -1,0 +1,52 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.sqlite3
+*.db
+
+.env
+# Virtual Environment directories
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# FastAPI specific
+*.sqlite3  # if using SQLite
+*.env      # environment variables (use .env files for sensitive data like DB creds)
+config/settings.yaml  # if you have a config file that might contain sensitive information
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Test output
+*.coverage
+*.tox/
+*.nox/
+*.coverage.*
+nosetests.xml
+test-results/
+
+# Jupyter notebooks (if applicable)
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store   # macOS
+Thumbs.db   # Windows
+
+# If you use a specific dependency management tool
+Pipfile.lock
+poetry.lock
